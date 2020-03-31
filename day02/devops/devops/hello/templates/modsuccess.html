@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps</title>
+</head>
+<body>
+{% extends "hello/base.html" %}
+{% block title %} 用户管理系统
+{% endblock %}
+{% block content %}
+<p> 用户：{{ user }} 的信息已修改成功！ </p>
+{% endblock %}
+</body>
+</html>

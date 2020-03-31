@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps</title>
+</head>
+<body>
+{% extends "hello/base.html" %}
+{% block title %} 用户管理系统
+{% endblock %}
+
+{% block content %}
+<h4>新增用户：</h4>
+<form action="addsuccess/" method="post">
+name:<br>
+<input type="text" name="name">
+<br>
+password:<br>
+<input type="text" name="password">
+<br>
+sex:<br>
+<input type="text" name="sex">
+<br><br>
+<input type="submit" value="提交">
+</form>
+<br>
+{% endblock %}
+
+</body>
+</html>

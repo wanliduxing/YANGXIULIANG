@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps</title>
+</head>
+<body>
+{% extends "hello/base.html" %}
+{% block title %} 用户管理系统
+{% endblock %}
+{% block content %}
+<h3>确定要删除以下用户吗？</h3>
+<table border="1">
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>密码</th>
+        <th>性别</th>
+    </tr>
+</thead>
+<tbody>
+    {% for u in user %}
+    <tr>
+        <td>{{ u.id }}</td>
+        <td>{{ u.name }}</td>
+        <td>{{ u.password }}</td>
+        <td>{{ u.sex }}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+<a href="javascript:history.go(-1)" >返回</a> <a href="delesuccess" >确定</a>
+{% endblock %}
+</body>
+</html>
+<a href="javascript:history.go(-1)" >backaaaaaa</a>

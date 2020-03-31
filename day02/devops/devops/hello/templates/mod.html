@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps</title>
+</head>
+<body>
+{% extends "hello/base.html" %}
+{% block title %} 用户管理系统
+{% endblock %}
+
+{% block content %}
+{% for u in user %}
+<h4>修改用户：</h4>
+<form action="modsuccess/" method="post">
+    id:<br>
+<input type="text" name="id" value={{ u.id }}>
+    <br>
+    name:<br>
+<input type="text" name="name" value={{ u.name }}>
+    <br>
+    password:<br>
+<input type="text" name="password" value={{ u.password }}>
+    <br>
+    sex:<br>
+<input type="text" name="sex" value={{ u.sex }}>
+    <br><br>
+<input type="submit" value="修改">
+</form>
+<br>
+{% endfor %}
+{% endblock %}
+
+</body>
+</html>

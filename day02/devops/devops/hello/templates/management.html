@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps</title>
+</head>
+<body>
+{% extends "hello/base.html" %}
+{% block title %} 用户管理系统
+{% endblock %}
+
+{% block content %}
+<a href="add">新增用户</a>
+<br>
+<br>
+<table border="1">
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>密码</th>
+        <th>性别</th>
+        <th>管理</th>
+    </tr>
+</thead>
+<tbody>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.password }}</td>
+        <td>{{ user.sex }}</td>
+        <td><a href="{{ user.id }}/mod">编辑</a>  <a href="{{ user.id }}/dele">删除</a></td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+{% endblock %}
+</body>
+</html>
