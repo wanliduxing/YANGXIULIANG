@@ -67,7 +67,7 @@ class modView(UpdateView):
 ```
 >实现效果：
 ##### 查看所有——
-![avatar](https://cdn.jsdelivr.net/gh/YanYuHanYun/image/406d460cbba23e21721c76aec752409e.png)
+![avatar](http://chuantu.xyz/t6/728/1586568231x992239408.png)
 ##### 新增用户——
 ![avatar](http://chuantu.xyz/t6/728/1586530952x992239408.png)
 ![avatar](http://chuantu.xyz/t6/728/1586530994x977013264.png)
